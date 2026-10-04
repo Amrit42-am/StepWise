@@ -1,0 +1,109 @@
+.mode-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mode-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.mode-header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.input-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.profile-required {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.input-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-section label {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.input-section textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-size: 1rem;
+}
+
+.chat-section {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgba(30, 41, 59, 0.5);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.warning-text {
+  color: var(--error-color);
+}
+
+.chat-input-form {
+  display: flex;
+  gap: 1rem;
+}
+
+.chat-input-form input {
+  flex: 1;
+}
+
+/* Two-column layout for code hint mode */
+.two-column-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.code-editor-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.code-textarea {
+  flex: 1;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  min-height: 400px;
+  resize: none;
+  background-color: #0d1117;
+  color: #e6edf3;
+}
+
+@media (max-width: 900px) {
+  .two-column-layout {
+    grid-template-columns: 1fr;
+  }
+}
