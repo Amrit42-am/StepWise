@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import { MongoMemoryServer } from 'mongodb-memory-server';
 
 let mongoServer;
 
@@ -8,6 +7,7 @@ const connectDB = async () => {
 
   if (!uri) {
     console.log('No MONGODB_URI found. Starting in-memory MongoDB for testing...');
+    const { MongoMemoryServer } = await import('mongodb-memory-server');
     mongoServer = await MongoMemoryServer.create();
     const mongoUri = mongoServer.getUri();
     await mongoose.connect(mongoUri);
