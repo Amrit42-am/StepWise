@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: stepwise-dsa
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        generateValue: false
+      - key: GOOGLE_API_KEY
+        generateValue: false
+      - key: FRONTEND_URL
+        generateValue: false
+      - key: PORT
+        value: "5000"

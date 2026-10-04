@@ -1,0 +1,32 @@
+{
+  "name": "stepwise-dsa",
+  "version": "1.0.0",
+  "description": "AI-powered DSA learning assistant that teaches through guided hints, not answers",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dsa",
+    "algorithms",
+    "data-structures",
+    "learning",
+    "ai-mentor",
+    "gemma"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.0",
+    "@google/generative-ai": "^0.1.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
